@@ -60,7 +60,7 @@ public class MouseKeyListener implements NativeKeyListener {
     if (!e.getModifiersText(e.getModifiers()).equalsIgnoreCase("")) {
       modifier = "  :  " + e.getModifiersText(e.getModifiers());
     }
-    if(letras.contains(String.valueOf(e.getKeyText(e.getKeyCode()).toLowerCase()))){
+    if(letras.contains(String.valueOf(e.getKeyText(e.getKeyCode())).toLowerCase())){
       modifier="  pequeñita";
     }
     System.out.println(e.getKeyText(e.getKeyCode()) + modifier);
