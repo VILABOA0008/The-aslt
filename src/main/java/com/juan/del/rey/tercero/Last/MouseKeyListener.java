@@ -56,12 +56,13 @@ public class MouseKeyListener implements NativeKeyListener {
       modifier = "  :  " + e.getModifiersText(e.getModifiers());
     }
     System.out.println(e.getKeyText(e.getKeyCode()) + modifier);
+    System.err.println("strings  "+String.valueOf(e.getKeyText(e.getKeyCode())));
     withMod.add(e.getKeyText(e.getKeyCode()) + modifier);
   }
 
   public void nativeKeyTyped(NativeKeyEvent e) {
     // TODO Auto-generated method stub
-    System.out.println(String.valueOf(e.getKeyChar()) + "   chara");
+//    System.out.println(String.valueOf(e.getKeyChar()) + "   chara");
     charr.add(String.valueOf(e.getKeyChar()));
   }
 
