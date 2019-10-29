@@ -1,0 +1,12 @@
+[remote "origin"]
+	url = https://github.com/VILABOA0008/The-aslt.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "origin/master"]
+	url = https://github.com/VILABOA0008/The-aslt.git
+	fetch = +refs/heads/*:refs/remotes/origin/master/*
+[remote "origin/"]
+	url = https://github.com/VILABOA0008/The-aslt.git
+	fetch = +refs/heads/*:refs/remotes/origin//*
+[remote "master"]
+	url = https://github.com/VILABOA0008/The-aslt.git
+	fetch = +refs/heads/*:refs/remotes/master/*

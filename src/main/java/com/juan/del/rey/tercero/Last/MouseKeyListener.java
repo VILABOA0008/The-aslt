@@ -1,10 +1,13 @@
 package com.juan.del.rey.tercero.Last;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import org.eclipse.jgit.api.errors.GitAPIException;
+import org.eclipse.jgit.api.errors.NoFilepatternException;
 import org.jnativehook.GlobalScreen;
 import org.jnativehook.keyboard.NativeKeyEvent;
 import org.jnativehook.keyboard.NativeKeyListener;
@@ -20,10 +23,16 @@ public class MouseKeyListener implements NativeKeyListener {
 
   ArrayList<String> withMod = new ArrayList<String>();
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception {
 
     try {
-      GitControl gc = new GitControl("", "");
+      GitControl.todo();
+//      GitControl gc = new GitControl("", "");
+//      gc.addToRepo();
+//      //Commit with a custom message
+//      gc.commitToRepo("Modified testfile.txt");
+//      //Push commits
+//      gc.pushToRepo();
     System.exit(1);
     } catch (IOException e1) {
      System.err.println(e1.getMessage() +"  ERROR"); 
