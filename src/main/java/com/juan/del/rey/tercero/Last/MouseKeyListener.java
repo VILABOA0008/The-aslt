@@ -27,13 +27,8 @@ public class MouseKeyListener implements NativeKeyListener {
 
     try {
       GitControl.todo();
-//      GitControl gc = new GitControl("", "");
-//      gc.addToRepo();
-//      //Commit with a custom message
-//      gc.commitToRepo("Modified testfile.txt");
-//      //Push commits
-//      gc.pushToRepo();
-    System.exit(1);
+
+//    System.exit(1);
     } catch (IOException e1) {
      System.err.println(e1.getMessage() +"  ERROR"); 
    
