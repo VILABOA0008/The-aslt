@@ -31,7 +31,7 @@ public class MouseKeyListener implements NativeKeyListener {
   public static void main(String[] args) throws Exception {
     try {
       GitControl.todo();
-
+System.err.println("A".equals("a"));
 //    System.exit(1);
     } catch (IOException e1) {
      System.err.println(e1.getMessage() +"  ERROR"); 
