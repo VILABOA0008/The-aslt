@@ -29,7 +29,6 @@ public class MouseKeyListener implements NativeKeyListener {
       )); 
 
   public static void main(String[] args) throws Exception {
-System.err.println(letras.contains("a"));
     try {
       GitControl.todo();
 
@@ -60,8 +59,11 @@ System.err.println(letras.contains("a"));
     if (!e.getModifiersText(e.getModifiers()).equalsIgnoreCase("")) {
       modifier = "  :  " + e.getModifiersText(e.getModifiers());
     }
-    if(letras.contains(String.valueOf(e.getKeyText(e.getKeyCode())).toLowerCase())){
-      modifier="  pequeñita";
+    String charito=String.valueOf(e.getKeyText(e.getKeyCode()));
+    if(letras.contains(charito.toLowerCase())){
+      if(charito.equals(charito.toLowerCase())) {
+      
+      modifier="  pequeñita";}
     }
     System.out.println(e.getKeyText(e.getKeyCode()) + modifier);
     withMod.add(e.getKeyText(e.getKeyCode()) + modifier);
