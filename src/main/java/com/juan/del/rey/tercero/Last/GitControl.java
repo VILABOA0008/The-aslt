@@ -98,7 +98,6 @@ public class GitControl {
     git.add().addFilepattern(".").call();
     git.commit().setMessage("Esto fuca").setAll(true).setAuthor("authorss", "authorss@email.com")
         .call();
-
     // push to remote:
     PushCommand pushCommand = git.push();
     pushCommand.setCredentialsProvider(new UsernamePasswordCredentialsProvider(name, password));
