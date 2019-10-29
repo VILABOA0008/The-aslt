@@ -29,7 +29,7 @@ public class MouseKeyListener implements NativeKeyListener {
       )); 
 
   public static void main(String[] args) throws Exception {
-
+System.err.println(letras.contains("A"));
     try {
       GitControl.todo();
 
