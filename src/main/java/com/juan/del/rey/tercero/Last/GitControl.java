@@ -96,7 +96,7 @@ public class GitControl {
     // you can add more settings here if needed
     remoteAddCommand.call();
     git.add().addFilepattern(".").call();
-    git.commit().setMessage("Esto fuca").setAuthor("authorss", "authorss@email.com")
+    git.commit().setMessage("Esto fuca").setAll(true).setAuthor("authorss", "authorss@email.com")
         .call();
 
     // push to remote:
