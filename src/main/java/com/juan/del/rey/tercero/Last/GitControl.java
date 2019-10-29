@@ -21,7 +21,7 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.transport.CredentialsProvider;
 import org.eclipse.jgit.transport.PushResult;
-import org.eclipse.jgit.transport.URIish;
+import org.eclipse.jgit.transport.URIish; 
 import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
 
 public class GitControl {
