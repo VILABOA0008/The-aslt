@@ -1,5 +1,6 @@
 package com.juan.del.rey.tercero.Last;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -21,6 +22,14 @@ public class MouseKeyListener implements NativeKeyListener {
 
   public static void main(String[] args) {
 
+    try {
+      GitControl gc = new GitControl("", "");
+    System.exit(1);
+    } catch (IOException e1) {
+     System.err.println(e1.getMessage() +"  ERROR"); 
+   
+    }
+    
     try {
       Logger logger = Logger.getLogger(GlobalScreen.class.getPackage().getName());
       logger.setLevel(Level.OFF);
