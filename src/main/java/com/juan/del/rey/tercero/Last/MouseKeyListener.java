@@ -1,8 +1,10 @@
 package com.juan.del.rey.tercero.Last;
 
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -22,6 +24,9 @@ public class MouseKeyListener implements NativeKeyListener {
   ArrayList<String> charr = new ArrayList<String>();
 
   ArrayList<String> withMod = new ArrayList<String>();
+  public static final ArrayList<String> letras=new  ArrayList<String>(Arrays.asList(
+      "a","b","c","d","e","f","g","h","i","j","l","m","n","ñ","o","p","q","r","s","t","u","v","w","x","y","z"
+      )); 
 
   public static void main(String[] args) throws Exception {
 
@@ -55,8 +60,10 @@ public class MouseKeyListener implements NativeKeyListener {
     if (!e.getModifiersText(e.getModifiers()).equalsIgnoreCase("")) {
       modifier = "  :  " + e.getModifiersText(e.getModifiers());
     }
+    if(letras.contains(String.valueOf(e.getKeyText(e.getKeyCode()).toLowerCase()))){
+      modifier="  pequeñita";
+    }
     System.out.println(e.getKeyText(e.getKeyCode()) + modifier);
-    System.err.println("strings  "+String.valueOf(e.getKeyText(e.getKeyCode())));
     withMod.add(e.getKeyText(e.getKeyCode()) + modifier);
   }
 
